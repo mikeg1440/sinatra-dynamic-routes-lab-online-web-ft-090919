@@ -1,0 +1,13 @@
+<% num1, num2 = params[:number1].to_i, params[:number2].to_i%>
+
+<% if params[:operation] == "add"%>
+  <% solution = num1 + num2%>
+<% elsif params[:operation] == "subtract"%>
+  <% solution = num1 - num2 %>
+<% elsif params[:operation] == "multiply"%>
+  <% solution = num1 * num2 %>
+<% elsif params[:operation] == "divide"%>
+  <% solution = num1 / num2 %>
+<% end %>
+
+<%= solution.to_s %>
